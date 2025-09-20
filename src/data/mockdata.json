@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "age": 32,
+    "gender": "Male",
+    "email": "aarav.sharma@example.com",
+    "address": "45 MG Road, Bengaluru, Karnataka",
+    "disease": "Diabetes"
+  },
+  {
+    "id": 2,
+    "name": "Ananya Verma",
+    "age": 28,
+    "gender": "Female",
+    "email": "ananya.verma@example.com",
+    "address": "22 Sector 18, Noida, Uttar Pradesh",
+    "disease": "Asthma"
+  },
+  {
+    "id": 3,
+    "name": "Rohan Patel",
+    "age": 40,
+    "gender": "Male",
+    "email": "rohan.patel@example.com",
+    "address": "56 CG Road, Ahmedabad, Gujarat",
+    "disease": "Hypertension"
+  },
+  {
+    "id": 4,
+    "name": "Priya Nair",
+    "age": 35,
+    "gender": "Female",
+    "email": "priya.nair@example.com",
+    "address": "78 Marine Drive, Kochi, Kerala",
+    "disease": "Arthritis"
+  },
+  {
+    "id": 5,
+    "name": "Kabir Khan",
+    "age": 50,
+    "gender": "Male",
+    "email": "kabir.khan@example.com",
+    "address": "11 Bandra West, Mumbai, Maharashtra",
+    "disease": "Heart Disease"
+  },
+  {
+    "id": 6,
+    "name": "Meera Iyer",
+    "age": 24,
+    "gender": "Female",
+    "email": "meera.iyer@example.com",
+    "address": "33 T Nagar, Chennai, Tamil Nadu",
+    "disease": "Thyroid"
+  },
+  {
+    "id": 7,
+    "name": "Aditya Singh",
+    "age": 45,
+    "gender": "Male",
+    "email": "aditya.singh@example.com",
+    "address": "101 Civil Lines, Lucknow, Uttar Pradesh",
+    "disease": "Kidney Stone"
+  },
+  {
+    "id": 8,
+    "name": "Sneha Deshmukh",
+    "age": 29,
+    "gender": "Female",
+    "email": "sneha.deshmukh@example.com",
+    "address": "19 FC Road, Pune, Maharashtra",
+    "disease": "Migraine"
+  },
+  {
+    "id": 9,
+    "name": "Vikram Reddy",
+    "age": 37,
+    "gender": "Male",
+    "email": "vikram.reddy@example.com",
+    "address": "72 Banjara Hills, Hyderabad, Telangana",
+    "disease": "Liver Infection"
+  },
+  {
+    "id": 10,
+    "name": "Neha Kapoor",
+    "age": 31,
+    "gender": "Female",
+    "email": "neha.kapoor@example.com",
+    "address": "25 Connaught Place, New Delhi",
+    "disease": "Depression"
+  }
+]
