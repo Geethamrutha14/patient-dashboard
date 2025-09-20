@@ -6,6 +6,8 @@ export default function Patient() {
 
     const [query , setQuery] = useState("");
     const [patients , setPatients] = useState(mockdata);
+    const [selectedPatient , setSelectedPatient] = useState(null);
+
     const filteredPeople = patients.filter((patient) => 
     patient.name.toLowerCase().includes(query.toLowerCase()));
 
@@ -41,7 +43,8 @@ export default function Patient() {
                     </ol>
                     <div>
                         <button 
-                            className='mt-3 bg-green-500 text-white px-4 py-2 rounded-lg hover:cursor-pointer hover:bg-green-600'>
+                            className='mt-3 bg-green-500 text-white px-4 py-2 rounded-lg hover:cursor-pointer hover:bg-green-600'
+                            onClick={()=> setSelectedPatient(data)}>
                             View Details
                         </button>
                     </div>
@@ -58,6 +61,23 @@ export default function Patient() {
         </div>
        </ul>
 
+       {
+         selectedPatient && (
+            <div className='flex flex-col items-center justify-center gap-2 bg-gray-300 p-5 rounded-lg'>
+                <ul>
+                    <li><b>Name </b>: {selectedPatient.name}</li>
+                    <li><b>Token No : </b>{selectedPatient.id}</li>
+                    <li><b>Age </b>: {selectedPatient.age}</li>
+                    <li><b>Email</b> : {selectedPatient.email}</li>
+                    <li><b>Address</b> : {selectedPatient.address}</li>
+                    <li><b>Disease</b> : {selectedPatient.disease}</li>
+                </ul>
+                <button onClick={()=> setSelectedPatient(null)}
+                    className='bg-red-500 hover:bg-red-600 p-3 px-4 py-2 rounded-lg text-white uppercase'>
+                        close</button>
+            </div>
+         )
+       }
     </div>
     
   )
