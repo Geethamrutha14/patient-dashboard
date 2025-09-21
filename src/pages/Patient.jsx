@@ -7,9 +7,10 @@ export default function Patient() {
     const [query , setQuery] = useState("");
     const [patients , setPatients] = useState(mockdata);
     const [selectedPatient , setSelectedPatient] = useState(null);
-
     const filteredPeople = patients.filter((patient) => 
     patient.name.toLowerCase().includes(query.toLowerCase()));
+
+    console.log(setPatients);
 
   return (
     
