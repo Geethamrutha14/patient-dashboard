@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
-
+import { Navigate, useNavigate } from 'react-router-dom';
 export default function AddPerson() {
+    const navigate = useNavigate();
     const [formData , setFormData] = useState({
         name : "", 
         age : "",
@@ -21,6 +22,17 @@ export default function AddPerson() {
     const handleSubmit = (e)=> {
         e.preventDefault();
         console.log("added patient :",formData);
+        const stored = localStorage.getItem("patients");
+        const patients = stored ? JSON.parse(stored) : [];
+
+        const newPatient = {
+            id : patients.length+1 , 
+            ...formData,
+        };
+
+        const updated = [...patients , newPatient];
+        localStorage.setItem("patients" , JSON.stringify(updated));
+
         alert(`Patient ${formData.name} added successfully!`);
 
         setFormData({
@@ -31,6 +43,7 @@ export default function AddPerson() {
             address : "",
             disease : "",
         });
+        navigate("/patients");
     };
 
   return (
@@ -46,7 +59,8 @@ export default function AddPerson() {
                 className='w-full p-2 outline-slate-200 rounded-lg bg-slate-100'
                 placeholder='Enter Full Name'
                 value={formData.name}
-                onChange={handleChange}/>
+                onChange={handleChange}
+                required/>
             </div>
 
             <div>
@@ -55,7 +69,8 @@ export default function AddPerson() {
                 <input type="number" id='age' min={1} max={100} 
                 className='w-full bg-slate-100 outline-slate-200 p-2 rounded-lg'
                 value={formData.age}
-                onChange={handleChange}/>
+                onChange={handleChange}
+                required/>
             </div>
 
            <div>
@@ -64,7 +79,8 @@ export default function AddPerson() {
                 className='w-full bg-slate-100 outline-slate-200 p-2 rounded-lg' 
                 placeholder='johndoe@example.com'
                 value={formData.email}
-                onChange={handleChange}/>
+                onChange={handleChange}
+                required/>
            </div>
 
             <div>
@@ -73,7 +89,8 @@ export default function AddPerson() {
                 <select name="gender" id="gender" 
                 className='w-full bg-slate-100 p-2 rounded-lg outline-slate-200'
                 value={formData.gender}
-                onChange={handleChange}>
+                onChange={handleChange}
+                required>
                     <option value="Prefer Not To Say">Prefer Not To Say</option>
                     <option value="Female">Female</option>
                     <option value="Male">Male</option>
@@ -87,7 +104,8 @@ export default function AddPerson() {
                 <textarea name="address" placeholder='Add address...' id="address" rows={2}
                 className='bg-slate-100 w-full rounded-lg outline-slate-100 p-2'
                 value={formData.address}
-                onChange={handleChange}></textarea>
+                onChange={handleChange}
+                required></textarea>
             </div>
 
            <div>
@@ -96,7 +114,8 @@ export default function AddPerson() {
                 <textarea name="disease" id="disease" placeholder='Add disease...'
                 className='bg-slate-100 w-full rounded-lg outline-slate-100 p-2'
                 value={formData.disease}
-                onChange={handleChange}></textarea>
+                onChange={handleChange}
+                required></textarea>
            </div>
 
            <button
