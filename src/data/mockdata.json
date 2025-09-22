@@ -6,7 +6,8 @@
     "gender": "Male",
     "email": "aarav.sharma@example.com",
     "address": "45 MG Road, Bengaluru, Karnataka",
-    "disease": "Diabetes"
+    "disease": "Diabetes",
+    "contact": "9876543210"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "gender": "Female",
     "email": "ananya.verma@example.com",
     "address": "22 Sector 18, Noida, Uttar Pradesh",
-    "disease": "Asthma"
+    "disease": "Asthma",
+    "contact": "9876543211"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "gender": "Male",
     "email": "rohan.patel@example.com",
     "address": "56 CG Road, Ahmedabad, Gujarat",
-    "disease": "Hypertension"
+    "disease": "Hypertension",
+    "contact": "9876543212"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "gender": "Female",
     "email": "priya.nair@example.com",
     "address": "78 Marine Drive, Kochi, Kerala",
-    "disease": "Arthritis"
+    "disease": "Arthritis",
+    "contact": "9876543213"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "gender": "Male",
     "email": "kabir.khan@example.com",
     "address": "11 Bandra West, Mumbai, Maharashtra",
-    "disease": "Heart Disease"
+    "disease": "Heart Disease",
+    "contact": "9876543214"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "gender": "Female",
     "email": "meera.iyer@example.com",
     "address": "33 T Nagar, Chennai, Tamil Nadu",
-    "disease": "Thyroid"
+    "disease": "Thyroid",
+    "contact": "9876543215"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "gender": "Male",
     "email": "aditya.singh@example.com",
     "address": "101 Civil Lines, Lucknow, Uttar Pradesh",
-    "disease": "Kidney Stone"
+    "disease": "Kidney Stone",
+    "contact": "9876543216"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "gender": "Female",
     "email": "sneha.deshmukh@example.com",
     "address": "19 FC Road, Pune, Maharashtra",
-    "disease": "Migraine"
+    "disease": "Migraine",
+    "contact": "9876543217"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "gender": "Male",
     "email": "vikram.reddy@example.com",
     "address": "72 Banjara Hills, Hyderabad, Telangana",
-    "disease": "Liver Infection"
+    "disease": "Liver Infection",
+    "contact": "9876543218"
   },
   {
     "id": 10,
@@ -87,6 +96,7 @@
     "gender": "Female",
     "email": "neha.kapoor@example.com",
     "address": "25 Connaught Place, New Delhi",
-    "disease": "Depression"
+    "disease": "Depression",
+    "contact": "9876543219"
   }
 ]

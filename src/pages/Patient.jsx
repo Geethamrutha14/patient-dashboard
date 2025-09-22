@@ -82,6 +82,7 @@ export default function Patient() {
                     <li><b>Token No : </b>{selectedPatient.id}</li>
                     <li><b>Age </b>: {selectedPatient.age}</li>
                     <li><b>Email</b> : {selectedPatient.email}</li>
+                    <li><b>Contact</b> : {selectedPatient.contact}</li>
                     <li><b>Address</b> : {selectedPatient.address}</li>
                     <li><b>Disease</b> : {selectedPatient.disease}</li>
                 </ul>

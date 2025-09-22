@@ -39,6 +39,7 @@ export default function AddPerson() {
             name : "",
             age : "",
             email : "",
+            contact : "",
             gender : "Prefer Not To Say",
             address : "",
             disease : "",
@@ -82,7 +83,16 @@ export default function AddPerson() {
                 onChange={handleChange}
                 required/>
            </div>
-
+           <div>
+                <label htmlFor="contact" className='block text-sm font-medium'>Contact : </label>
+                <input type="tel" id='contact' 
+                className='w-full bg-slate-100 outline-slate-200 p-2 rounded-lg'
+                value={formData.contact}
+                onChange={handleChange}
+                pattern='[0-9]{10}'
+                required/>
+                
+           </div>
             <div>
                 <label htmlFor="gender"
                 className='block text-sm font-medium'>Gender : </label>
