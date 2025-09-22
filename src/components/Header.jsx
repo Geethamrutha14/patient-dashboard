@@ -7,7 +7,7 @@ export default function Header() {
       <header className='flex flex-row items-center justify-between p-6 shadow-md bg-slate-200'>
         <Link to='/'>
             <div className="logo flex items-center">
-                <span className='text-2xl text-slate-400 font-bold'>Jurarut</span>
+                <span className='text-2xl text-slate-400 font-bold'>Jarurat</span>
                 <span className='text-2xl text-slate-500 font-bold'>Care</span>
             </div>
         </Link>

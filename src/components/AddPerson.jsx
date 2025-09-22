@@ -52,7 +52,7 @@ export default function AddPerson() {
         className='flex flex-col gap-4 bg-white w-full max-w-md p-6 shadow-lg rounded-lg'>
 
             {/* name , age , address , disease , email , gender */}
-            <h1 className='text-center text-2xl mb-4 text-slate-700'>Add Patient</h1>
+            <h1 className='text-center text-2xl mb-4 text-slate-700'>Patient Details</h1>
             <div>
                 <label htmlFor="name" className='block text-sm font-medium text-slate-600'>Full Name : </label>
                 <input type="text" id='name' 
